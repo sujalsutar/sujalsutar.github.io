@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SujalSutar || Portfolio </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+         <h1>Sujal<span style="color: orange;">Sutar</span></h1>
+          <nav>
+            <a href="#home"><span>Home</span></a>
+            <a href="#about"><span>About</span></a>
+            <a href="#projects"><span>Project</span></a>
+            <a href="#contact"><span>Contact</span></a>
+        </nav>
+    </header>
+
+     <!-- Main section-->
+       <section id="home" class="main">
+        <img src="C:\Users\Sujal\Downloads\propic.jpg" alt="Profile Picture">
+        <div class="main-text">
+            <h2>
+                I am 
+                <span>
+                    <span>SujalSutar</span>
+                    <span>a Coder</span>
+                    <span>a Student</span>
+                    <span>a Gamer</span>
+                </span>
+            </h2>
+            <h2>Welcome to My Portfolio 👋</h2>
+            <p>
+                Hi, I'm <strong>Sujal Sutar</strong> — I am a student who loves to learn and improve every day.
+                I enjoy writing code and building things that work well and look interesting.
+                 I also love playing games, exploring new worlds, and discovering cool ideas that inspire me.
+                My goal is to mix my creativity with my coding skills to develop something new and unique that can make people smile or think in a different way.
+                I believe that by working hard, trying new things, and staying curious.
+            </p>
+        </div>
+    </section>
+
+     <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                <p>
+                   I am a student who is always eager to learn and improve myself.
+                   One of my biggest passions is coding, because it allows me to solve problems, think logically, and create new and unique things that reflect my imagination.
+                   I love challenges, and I enjoy experimenting with fresh ideas that help me grow both personally and intellectually. Besides technology, I also enjoy playing video games — they are a great way for me to relax, sharpen my strategic thinking, and have fun with friends. In addition to gaming and coding, I have a strong love for traveling. Exploring new places and experiencing different cultures makes me feel adventurous and open-minded, and it gives me memories and lessons that I carry with me wherever I go.
+                   All these interests make my life exciting and help me develop new skills, making each day a chance to discover something new about myself and the world around me. 
+                </p>
+                </div>
+            </div>
+            <!-- SKILLS SECTION -->
+            <div class="skills-section">
+            <h2>Skills</h2>
+
+            <!-- Programming Languages -->
+            <div class="skills-category">
+                <h3>💻 Programming Languages</h3>
+                <div class="skills-grid">
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+                </div>
+            </div>
+        </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        
+        <a href="../404-page.Folder/index.html">
+            <div class="project-card">
+                <h3>💻Portfolio Website</h3>
+                <p>A clean, responsive portfolio showcasing your skills, projects, and contact form — built with HTML, CSS, and JS.</p>
+            </div>
+        </a>
+    </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in working together or just want to say hi? Let’s connect!</p>
+
+            <div class="contact-links">
+                <a href="mailto:sujalsutar08@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://www.instagram.com/_sujal.sutar_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/Soultaker-drk" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+
+        </section>
+
+        <footer>© 2026 Sujal_Sutar. All Rights Reserved.</footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 80, // offset for fixed header
+                behavior: 'smooth'
+            });
+            }
+        });
+        });
+    </script>
+</body>
+</html>
